@@ -1,6 +1,6 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
-import '../uprtcl-common.js';
+import '../dist/uprtcl-common.js';
 
 describe('<uprtcl-common>', () => {
   it('has a default property title', async () => {

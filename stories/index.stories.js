@@ -1,7 +1,7 @@
 import { storiesOf, html, withKnobs, withClassPropertiesKnobs } from '@open-wc/demoing-storybook';
 
 import { UprtclCommon } from '../dist/UprtclCommon.js';
-import '../uprtcl-common.js';
+import '../dist/uprtcl-common.js';
 
 storiesOf('uprtcl-common', module)
   .addDecorator(withKnobs)

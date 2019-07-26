@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -12,11 +13,6 @@
     "esModuleInterop": true,
     "outDir": "dist"
   },
-  "include": [
-    "src/**/*.ts",
-    "node_modules/@open-wc/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules/!(@open-wc)"
-  ]
+  "include": ["src/**/*.ts", "node_modules/@open-wc/**/*.ts"],
+  "exclude": ["node_modules/!(@open-wc)"]
 }

@@ -1,6 +1,10 @@
-import { html, css, LitElement } from 'lit-element';
+import { html, css, LitElement, property, customElement } from 'lit-element';
 
+@customElement('uprtcl-common')
 export class UprtclCommon extends LitElement {
+  @property()
+  title = 'Hello world!';
+
   static get styles() {
     return css`
       :host {
@@ -9,17 +13,6 @@ export class UprtclCommon extends LitElement {
         padding: 25px;
       }
     `;
-  }
-
-  static get properties() {
-    return {
-      title: { type: String },
-    };
-  }
-
-  constructor() {
-    super();
-    this.title = 'Hello world!';
   }
 
   render() {
